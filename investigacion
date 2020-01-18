@@ -1,0 +1,68 @@
+MapReduce
+Definición de MapReduce.
+  MapReduce es un modelo de programación para dar soporte a la computación paralela sobre grandes colecciones de datos en grupos de computadoras y al commodity computing. El nombre del framework está inspirado en los nombres de dos importantes métodos, macros o funciones en programación funcional: Map y Reduce. MapReduce ha sido adoptado mundialmente, ya que existe una implementación OpenSource denominada Hadoop. Su desarrollo fue liderado inicialmente por Yahoo y actualmente lo realiza el proyecto Apache. En esta década de los años 2010 existen diversas iniciativas similares a Hadoop tanto en la industria como en el ámbito académico. Se han escrito implementaciones de bibliotecas de MapReduce en diversos lenguajes de programación como C++, Java y Python.
+Cuando.
+Las primeras implementaciones de Google necesitaban realizar operaciones de multiplicación de grandes matrices para calcular el PageRank, esto es, la clasificación de páginas en una búsqueda. De esta forma se hizo popular MapReduce como un método de cálculo de álgebra lineal. La preocupación por tratar grandes colecciones de datos, llevó a crear algoritmos y frameworks capaces de poder procesar terabytes de información. Una de las primeras aplicaciones capaces de programar MapReduce fue implementado inicialmente en Hadoop, diseñado inicialmente por Doug Cutting, que lo nombró así por el elefante de juguete de su hijo. Fue desarrollado originalmente para apoyar la distribución del proyecto de motor de búsqueda Nutch.
+
+
+
+
+
+
+
+
+Apache Spark
+Definición de Spark
+   Apache Spark es un sistema de computación que se basa en Hadoop Map Reduce y que, principalmente, permite dividir o paralelizar el trabajo, ya que normalmente se instala en un clúster de máquina. La idea es que tengamos n máquinas, por ejemplo diez máquinas, y cada una de esas instancias va a tener instalada una versión de Apache Spark.
+Cuando.
+Apache Spark nació en 2009 en la Universidad de Berkeley, y actualmente se encuentra en la versión 2.3.0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Apache Hadoop
+Definición de Hadoop.
+  Apache Hadoop es un framework de software que soporta aplicaciones distribuidas bajo una licencia libre. Permite a las aplicaciones trabajar con miles de nodos y petabytes de datos. Hadoop se inspiró en los documentos Google para MapReduce y Google File System (GFS).
+Hadoop es un proyecto de alto nivel Apache que está siendo construido y usado por una comunidad global de contribuyentes, mediante el lenguaje de programación Java. Yahoo! ha sido el mayor contribuyente al proyecto, y usa Hadoop extensivamente en su negocio. 
+Cuando.
+Hadoop fue creado por Doug Cutting, que lo nombró así por el elefante de juguete de su hijo. Fue desarrollado originalmente para apoyar la distribución del proyecto de motor de búsqueda, denominado Nutch. 
+Para que sirve.
+Hadoop consiste básicamente en el Hadoop Common, que proporciona acceso a los sistemas de archivos soportados por Hadoop. El paquete de software The Hadoop Common contiene los archivos .jar y los scripts necesarios para ejecutar Hadoop. El paquete también proporciona código fuente, documentación, y una sección de contribución que incluye proyectos de la Comunidad Hadoop.
+Una funcionalidad clave es que para la programación efectiva de trabajo, cada sistema de archivos debe conocer y proporcionar su ubicación: el nombre del rack (más precisamente, del switch) donde está el nodo trabajador. Las aplicaciones Hadoop pueden usar esta información para ejecutar trabajo en el nodo donde están los datos y, en su defecto, en el mismo rack/switch, reduciendo así el tráfico de red troncal (backbone traffic). El sistema de archivos HDFS usa esto cuando replica datos, para intentar conservar copias diferentes de los datos en racks diferentes. El objetivo es reducir el impacto de un corte de energía de rack o de fallo de interruptor de modo que incluso si se producen estos eventos, los datos todavía puedan ser legibles.
+
+
+
+
+
+Apache Flume
+
+Definición de Flume
+ Apache Flume es un servicio distribuido que mueve de forma fiable y eficiente grandes cantidades de datos, especialmente logs. Ideal para aplicaciones de analíticas en línea en entornos Hadoop.
+Flume tiene una arquitectura sencilla y flexible basada en flujos de datos en streaming, que permite construir flujos de múltiples por donde viajan los eventos a través de diferentes agentes hasta que alcanzan el destino final.
+Cuando.
+Apache Flume comienza a desarrollarse en 20010 (poco después que Scribe por Facebook), como servidor de logs, y pasa a la incubadora como proyecto Apache en el 2010 (v.1.0.0), en Julio de 2012 se convierte en proyecto Top (v.1.2.0).
+Para que sirve.
+El uso de Flume no solo está restringido a la recogida y agregación de logs. Como los orígenes son personalizables, Flume puede transportar gran cantidad de eventos incluyendo datos generados por las redes sociales, tráfico de red, mensajes de correo electrónico y casi cualquier fuente de datos configurable.
+Docker
+Definición de Docker.
+  La idea detrás de Docker es crear contenedores ligeros y portables para las aplicaciones software que puedan ejecutarse en cualquier máquina con Docker instalado, independientemente del sistema operativo que la máquina tenga por debajo, facilitando así también los despliegues.
+¡Ala! Definición traducida de la documentación oficial, demasiada información en pocas frases, no me entero de nada. Bien, empecemos por lo primero ¿qué es un contenedor?
+Este concepto ya es antiguo, y viene de Linux, pero por hacerte un símil con el mundo real, imagina en tu cabeza un contenedor de esos que suelen llevar los barcos de mercancías, que contiene distintos productos.
+Cuando.
+Solomon Hykes comenzó Docker como un proyecto interno dentro dotCloud, empresa enfocado a una plataforma como un servicio (PaaS), con las contribuciones iniciales de otros ingenieros de dotCloud, incluyendo Andrea Luzzardi y Francois-Xavier Bourlet. Jeff Lindsay también participó como colaborador independiente. Docker representa una evolución de la tecnología patentada de dotCloud, que es a su vez construida sobre proyectos de código abierto anteriores como Cloudlets.
+Docker fue liberado como código abierto en marzo de 2013. El 13 de marzo de 2014, con el lanzamiento de la versión 0.9, Docker dejó de utilizar LXC como el entorno de ejecución por defecto y lo reemplazó con su propia biblioteca, libcontainer, escrito en Go. El 13 de abril de 2015, el proyecto tenía más de 20 700 estrellas de GitHub (haciéndolo uno de los proyectos con más estrellas de GitHub, en 20ª posición), más de 4 700 bifurcaciones (forks), y casi 900 colaboradores.
+
+Para que sirve.
+Docker es una herramienta diseñada para beneficiar tanto a desarrolladores, testers, como administradores de sistemas, en relación con las máquinas, a los entornos en sí donde se ejecutan las aplicaciones software, los procesos de despliegue, etc.
+En el caso de los desarrolladores, el uso de Docker hace que puedan centrarse en desarrollar su código sin preocuparse de si dicho código funcionará en la máquina en la que se ejecutará.
